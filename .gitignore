@@ -1,6 +1,8 @@
 *.db
 *.py[cod]
+.venv/*
 .web
 __pycache__/
 assets/external/
-.venv/*
+alembic.ini
+alembic/
