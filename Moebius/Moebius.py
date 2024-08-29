@@ -4,7 +4,9 @@ import reflex as rx
 
 from rxconfig import config
 
-from . import pages, navigation
+from . import navigation, grupos
+
+from . import pages
 
 from .UI.base import base_page
 
@@ -34,6 +36,8 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index)
+app.add_page(grupos.gruposPorDia_page, route=navigation.routes.GRUPOS_ROUTE)
+
 #app.add_page(pages.gruposPorDia, route=navigation.routes.GRUPOS_ROUTE)
-#app.add_page(pages.listas, route=navigation.routes.LISTAS_ROUTE)
-#app.add_page(pages.notificaciones, route=navigation.routes.NOTIFICACIONES_ROUTE)
+app.add_page(pages.listas, route=navigation.routes.LISTAS_ROUTE)
+app.add_page(pages.notificaciones, route=navigation.routes.NOTIFICACIONES_ROUTE)
