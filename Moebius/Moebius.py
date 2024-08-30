@@ -33,10 +33,10 @@ def index() -> rx.Component:
     return (myChild)
 
 
-
 app = rx.App()
 app.add_page(index)
-app.add_page(grupos.gruposPorDia_page, route=navigation.routes.GRUPOS_ROUTE)
+app.add_page(grupos.gruposPorDia_page, route=navigation.routes.NUEVO_GRUPOS_ROUTE)
+app.add_page(grupos.grupos_list_page, route=navigation.routes.GRUPOS_ROUTE)
 
 #app.add_page(pages.gruposPorDia, route=navigation.routes.GRUPOS_ROUTE)
 app.add_page(pages.listas, route=navigation.routes.LISTAS_ROUTE)

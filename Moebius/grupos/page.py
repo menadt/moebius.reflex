@@ -1,6 +1,21 @@
 import reflex as rx
 from ..UI.base import base_page
 from . import form
+from . import state
+
+def grupos_list_page() -> rx.Component:
+    mychild=rx.vstack(
+        rx.heading("Grupos Por Día", 
+                   size="9", 
+                   align="center", 
+                   as_="h1"
+                   ),
+        text_align="center",
+        align="center",
+        justify="center",
+        )
+    return base_page(mychild)
+    
 
 
 def gruposPorDia_page() -> rx.Component:

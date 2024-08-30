@@ -10,6 +10,10 @@ class NavState(rx.State):
     def toGrupos(self):
         return rx.redirect(routes.GRUPOS_ROUTE)
     
+    def toNuevoGrupo(self):
+        return rx.redirect(routes.NUEVO_GRUPOS_ROUTE)
+    
+
     def toListas(self):
         return rx.redirect(routes.LISTAS_ROUTE)
     

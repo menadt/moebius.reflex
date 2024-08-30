@@ -33,6 +33,7 @@ def navbar() -> rx.Component:
                 rx.hstack(
                     navbar_link("Home", navigation.routes.HOME_ROUTE),
                     navbar_link("Grupos", navigation.routes.GRUPOS_ROUTE),
+                    navbar_link("Nuevo Grupo", navigation.routes.NUEVO_GRUPOS_ROUTE),
                     navbar_link("Listas", navigation.routes.LISTAS_ROUTE),
                     navbar_link("Notificaciones", navigation.routes.NOTIFICACIONES_ROUTE),
                     #navbar_link("Pagos", "/#"),
@@ -77,6 +78,8 @@ def navbar() -> rx.Component:
                             on_click=navigation.NavState.toHome),
                         rx.menu.item("Grupos",
                             on_click=navigation.NavState.toGrupos),
+                        rx.menu.item("Nuevo Grupo",
+                            on_click=navigation.NavState.toNuevoGrupo),
                         rx.menu.item("Listas",
                             on_click=navigation.NavState.toListas),
                         rx.menu.item("Notificaciones",

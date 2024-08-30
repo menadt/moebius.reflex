@@ -32,3 +32,6 @@ class nuevoGrupoState(rx.State):
                 select(grupoModel)
             ).all()
             self.entries = entries
+
+    
+    

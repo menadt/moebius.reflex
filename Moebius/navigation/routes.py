@@ -1,4 +1,5 @@
 HOME_ROUTE="/"
+NUEVO_GRUPOS_ROUTE="/nuevogrupo"
 GRUPOS_ROUTE="/grupospordia"
 LISTAS_ROUTE="/listas"
 NOTIFICACIONES_ROUTE="/notificaciones"
