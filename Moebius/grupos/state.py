@@ -12,7 +12,6 @@ class nuevoGrupoState(rx.State):
     
     async def handle_submit(self, form_data: dict):
         """Handle the form submit."""
-        print(form_data)
         self.form_data = form_data
         with rx.session() as session:
             db_entry = grupoModel(
@@ -32,6 +31,4 @@ class nuevoGrupoState(rx.State):
                 select(grupoModel)
             ).all()
             self.entries = entries
-
-    
-    
+        return

@@ -3,7 +3,7 @@ from .state import nuevoGrupoState
 from .. import context
 
 
-def gruposPorDia_form() -> rx.Component:
+def nuevoGrupo_form() -> rx.Component:
     return rx.form  (
         rx.vstack(
                 rx.heading("Nuevo Grupo:", 
